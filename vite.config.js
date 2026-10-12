@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 
 export default defineConfig({
-  base: "/web2-course-project-front-end-CherylAitchedji/",
+  base: "/digital-lookbook-frontend/",
   build: {
     outDir: "dist",
     rollupOptions: {
