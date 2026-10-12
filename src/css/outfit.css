@@ -1,0 +1,236 @@
+body {
+  background-image: url(../img/cover-light.png);
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+#back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 1em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#back-button img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/************************* Container *******************/
+
+.outfit-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+/************************ Images *************************/
+
+.outfit-image {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+
+/********** Clothes scrollbar *********/
+#clothes-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75em;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5em 0;
+  width: 100%;
+}
+
+.clothes-images {
+  width: 6rem;
+  height: 8rem;
+  object-fit: cover;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.clothes-images:hover {
+  transform: scale(1.1);
+}
+
+/********** Main outfit image ******************/
+.fit-pic {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.fit-pic img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+}
+
+/****************** Description ********************/
+
+.outfit-description-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description p {
+  margin: 0.5em 0;
+  line-height: 1.6;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+/****************** Rating *********************/
+
+.raiting-container {
+  margin: 1em 0;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.rating p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.rating img.star {
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.rating img.star:hover {
+  transform: scale(1.1);
+}
+
+/************************* Buttons ******************/
+
+.buttons-lineUp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  margin-top: auto;
+  padding-top: 1em;
+}
+
+#like-button {
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#like-button:hover {
+  transform: scale(1.1);
+}
+
+.buttons {
+  display: flex;
+  gap: 0.75em;
+  flex-wrap: wrap;
+}
+
+/********************************Desktop **************************************/
+
+@media (min-width: 1024px) {
+  .outfit-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .outfit-image {
+    flex-direction: row;
+    gap: 0.5em;
+  }
+
+  #clothes-container {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 120px;
+    max-height: 600px;
+    padding: 0;
+  }
+
+  .clothes-images {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+  }
+
+  .fit-pic {
+    flex: 1;
+    min-width: 20em;
+    margin: auto;
+  }
+
+  .outfit-description-card {
+    padding: 1.5em;
+  }
+
+  .description h4 {
+    font-size: 2rem;
+  }
+
+  .rating img.star {
+    width: 2em;
+    height: 2em;
+  }
+
+  .buttons {
+    flex-wrap: nowrap;
+  }
+  .outfit-container {
+    gap: 3em;
+  }
+
+  #clothes-container {
+    width: 9rem;
+  }
+
+  .outfit-description-card {
+    padding: 2em;
+  }
+}
+
+/******************Large Desktop *******************/
+
+@media (min-width: 1440px) {
+  .outfit-container {
+    padding: 3em;
+  }
+
+  #clothes-container {
+    width: 140px;
+  }
+
+  .fit-pic {
+    max-width: 30em;
+  }
+}

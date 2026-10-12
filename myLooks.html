@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://use.typekit.net/vgo0qsm.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/closet-looks.css" />
+    <link rel="stylesheet" href="src/css/myLooks.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="src/js/main.js"></script>
+    <script type="module" src="src/js/myLooks.js"></script>
+
+    <title>My Outfits</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a class="logo" href="index.html"
+          ><img src="src/img/digiloLogo.png"
+        /></a>
+      </div>
+      <div class="navbar-toggle">
+        <div class="bar"><img src="/hamMenu.svg" /></div>
+        <div class="bar"><img src="/close.svg" /></div>
+      </div>
+      <ul class="navbar-menu">
+        <li><a id="home" href="index.html">Home</a></li>
+        <li><a id="closet" href="myCloset.html">My Closet</a></li>
+        <li><a id="looks" href="myLooks.html">My Outfits</a></li>
+        <li><a class="primary-button login" href="login.html">Login</a></li>
+        <li><a class="primary-button" href="register.html">Register</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="myLooks-description">
+        <h1>My Outfits</h1>
+        <p>
+          Welcome to your digital lookbook! Rate your favorites, give a little
+          heart to the ones you love, and don’t be shy to delete what no longer
+          fits your vibe.
+        </p>
+      </div>
+      <div class="filter-wrapper">
+        <div class="filter-container">
+          <select id="filter-season" class="select-box">
+            <option value="all">All Seasons</option>
+            <option value="spring">Spring</option>
+            <option value="summer">Summer</option>
+            <option value="autumn">Autumn</option>
+            <option value="winter">Winter</option>
+          </select>
+          <select id="filter-occasion" class="select-box">
+            <option value="all">All Occasions</option>
+            <option value="homy">Homy</option>
+            <option value="casual">Casual</option>
+            <option value="outdoors">Outdoors</option>
+            <option value="night-out">Night Out</option>
+            <option value="vacation">Vacation</option>
+          </select>
+          <select id="filter-color" class="select-box">
+            <option value="all">All Colours</option>
+            <option value="red">Red</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="white">White</option>
+            <option value="black">Black</option>
+            <option value="brown">Brown</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="sort-by">
+          <p>Sort by:</p>
+          <select id="filter-sort" class="select-box">
+            <option value="highest-rated">Highest rated</option>
+            <option value="liked">Liked</option>
+            <option value="newest">Newest</option>
+          </select>
+          <a href="addOutfit.html" class="primary-button">Add Outfit</a>
+        </div>
+      </div>
+      <div class="filter-phone">
+        <select id="filter-clothingType" class="select-box">
+          <option value="all">All Clothing Types</option>
+          <option value="tops">Tops</option>
+          <option value="bottoms">Bottoms</option>
+          <option value="dresses">Dresses</option>
+          <option value="shoes">Shoes</option>
+          <option value="outwear">Outwear</option>
+          <option value="accesories">Accesories</option>
+        </select>
+        <select id="filter-season" class="select-box">
+          <option value="all">All Seasons</option>
+          <option value="spring">Spring</option>
+          <option value="summer">Summer</option>
+          <option value="autumn">Autumn</option>
+          <option value="winter">Winter</option>
+        </select>
+        <select id="filter-occasion" class="select-box">
+          <option value="all">All Occasions</option>
+          <option value="homy">Homy</option>
+          <option value="casual">Casual</option>
+          <option value="outdoors">Outdoors</option>
+          <option value="night-out">Night Out</option>
+          <option value="vacation">Vacation</option>
+        </select>
+        <select id="filter-color" class="select-box">
+          <option value="all">All Colours</option>
+          <option value="red">Red</option>
+          <option value="orange">Orange</option>
+          <option value="yellow">Yellow</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="white">White</option>
+          <option value="black">Black</option>
+          <option value="brown">Brown</option>
+          <option value="other">Other</option>
+        </select>
+        <select id="filter-sort" class="select-box">
+          <option value="newest">Newest</option>
+          <option value="highest-rated">Highest rated</option>
+          <option value="liked">Liked</option>
+        </select>
+      </div>
+      <a href="addOutfit.html" class="primary-button add-button">Add Outfit</a>
+      <div id="container-outfits"></div>
+    </main>
+    <footer>
+      <img src="src/img/logo-light.png" />
+      <p>Designed for fashion lovers, by a fashion lover! - Cher</p>
+    </footer>
+</html>

@@ -1,0 +1,158 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.myCloset-description,
+.myLooks-description p {
+  width: min(70%, 90%);
+  margin-bottom: 50px;
+}
+
+.sort-by p {
+  display: inline;
+}
+
+.sort-by a {
+  display: inline;
+}
+
+/************** Filter *****************/
+.filter-wrapper {
+  margin-top: 5em;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.filter-phone,
+.add-button {
+  display: none;
+}
+
+.add-button-desk {
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: calc(40% - 1rem);
+  font-size: 1rem;
+}
+
+@media (max-width: 1065px) {
+  .filter-phone {
+    max-width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+  }
+
+  .filter-phone select {
+    display: inline;
+  }
+
+  .add-button {
+    display: inline-block;
+    margin: 1em 0;
+    width: calc(100% - 2rem);
+    text-align: center;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .filter-wrapper {
+    display: none;
+  }
+
+  .sort-by p {
+    display: inline;
+    line-height: 0;
+  }
+}
+
+#container-clothes,
+#container-outfits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  padding: 2em 0em;
+  gap: 2em;
+  justify-items: center;
+}
+.clothing-card,
+.outfit-card {
+  width: 100%;
+  max-width: 21rem;
+}
+.clothing-card a,
+.outfit-card a {
+  text-decoration: none;
+  color: #231f20;
+}
+.clothing-card a:visited,
+.outfit-card a:visited {
+  color: #231f20;
+}
+
+.clothing-content,
+.outfit-content {
+  text-align: left;
+  font-size: 0.8rem;
+}
+.occ {
+  color: rgb(171, 141, 155);
+  text-transform: uppercase;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: #fbd3e1;
+}
+
+.like {
+  width: 25px;
+  height: 25px;
+  z-index: 12;
+  position: absolute;
+  left: 50%;
+  margin-top: 1em;
+}
+.image-container img {
+  width: 80%;
+  transform: scale(1.1);
+}
+
+.img-overlay {
+  width: 70%;
+  display: block;
+}
+
+.img-base {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s ease;
+  transform: scale(1);
+  pointer-events: none;
+}
+
+.image-container:hover .img-base {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.img-overlay:hover {
+  opacity: 0;
+}

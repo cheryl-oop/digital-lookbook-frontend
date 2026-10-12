@@ -1,0 +1,162 @@
+body {
+  background-image: url(../img/cover-light.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+}
+
+/************************* Container *******************/
+
+.clothing-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+/************************ Images *************************/
+
+.clothing-image {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.clothing-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+}
+
+/****************** Description ********************/
+
+.clothing-description-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description p {
+  margin: 0.5em 0;
+  line-height: 1.6;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+#create-button {
+  display: inline-block;
+  margin-top: 1em;
+  text-decoration: none;
+  width: calc(100% - 2em);
+  text-align: center;
+}
+
+/****************** Rating *********************/
+
+.raiting-container {
+  margin: 1em 0;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.rating p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.rating img.star {
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.rating img.star:hover {
+  transform: scale(1.1);
+}
+
+/************************* Buttons ******************/
+
+.buttons-lineUp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  margin-top: auto;
+  padding-top: 1em;
+}
+
+#like-button {
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#like-button:hover {
+  transform: scale(1.1);
+}
+
+.buttons {
+  display: flex;
+  gap: 0.75em;
+  flex-wrap: wrap;
+}
+
+/********************************Desktop **************************************/
+
+@media (min-width: 1024px) {
+  .clothing-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  .clothing-image {
+    margin: auto;
+    width: 40%;
+  }
+
+  .clothing-description-card {
+    width: 50%;
+    padding: 2em;
+  }
+
+  .description h4 {
+    font-size: 2rem;
+  }
+
+  .rating img.star {
+    width: 2em;
+    height: 2em;
+  }
+
+  .buttons {
+    flex-wrap: nowrap;
+  }
+}
+
+/******************Large Desktop *******************/
+
+@media (min-width: 1440px) {
+  .clothing-container {
+    padding: 3em;
+  }
+
+  .clothing-image {
+    max-width: 35em;
+  }
+}

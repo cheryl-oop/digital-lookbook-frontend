@@ -1,0 +1,39 @@
+#looks {
+  background-color: #fbd3e1;
+  color: #ff6198;
+  padding: 0.5em 1em;
+}
+
+.image-container {
+  background-color: transparent;
+}
+
+.image-container img {
+  width: 90%;
+}
+
+.img-overlay {
+  width: 70%;
+  display: block;
+}
+
+.img-base {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s ease;
+  transform: scale(1);
+  pointer-events: none;
+}
+
+.image-container:hover .img-base {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.img-overlay:hover {
+  opacity: 0;
+}

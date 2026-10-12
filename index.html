@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://use.typekit.net/vgo0qsm.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/homepage.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="src/js/main.js"></script>
+    <script type="module" src="src/js/home.js"></script>
+
+    <title>My Lookbook</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a class="logo" href="index.html"
+          ><img src="src/img/digiloLogo.png"
+        /></a>
+      </div>
+      <div class="navbar-toggle">
+        <div class="bar"><img src="/hamMenu.svg" /></div>
+        <div class="bar"><img src="/close.svg" /></div>
+      </div>
+      <ul class="navbar-menu">
+        <li><a id="home" href="index.html">Home</a></li>
+        <li><a id="closet" href="myCloset.html">My Closet</a></li>
+        <li><a id="looks" href="myLooks.html">My Outfits</a></li>
+        <li><a class="primary-button login" href="login.html">Login</a></li>
+        <li><a class="primary-button" href="register.html">Register</a></li>
+      </ul>
+    </nav>
+    <section id="landing-page">
+      <h1 class="title">Digital Lookbook</h1>
+      <h1 class="title-phone">Digital</h1>
+      <h1 class="title-phone">Look</h1>
+      <h1 class="title-phone">Book</h1>
+
+      <img class="image-landing" src="src/img/3 girls perspective.png" />
+      <img
+        class="image-landing image-phone"
+        src="src/img/1 girl perspective.png"
+      />
+      <div class="description">
+        <h3>Your Style, Your Rules</h3>
+        <p>
+          Upload your clothes, create stunning outfits and express your fashion
+          mood! All in one stylish space!
+        </p>
+        <div class="buttons">
+          <a class="primary-button" href="#">See Your Closet</a>
+          <a class="primary-button" href="#">Check Your Outfits</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="recent-looks">
+      <h2>Recent Looks</h2>
+      <div id="recent-looks-container"></div>
+    </section>
+    <section id="about">
+      <h2>What Is Digital Lookbook?</h2>
+      <div class="about-wrapper">
+        <img src="src/img/about-2.png" />
+        <p>
+          Digital Lookbook is your fashion universe, an elegant blend of
+          wardrobe organization and creative expression. Upload your favorite
+          pieces, style entire outfits, and curate a collection that reflects
+          who you are and how you want to feel. With each outfit you create,
+          you’re not just dressing, you’re designing your identity. Think of it
+          as your personal fashion editor, always ready to inspire, refine, and
+          celebrate your unique sense of style.
+        </p>
+        <img src="src/img/about.png" />
+      </div>
+    </section>
+    <section id="inspo">
+      <h2>Inspiration of the week</h2>
+      <video width="320" height="240" controls>
+        <source src="src/img/Fashion-video.mp4" type="video/mp4" />
+      </video>
+    </section>
+    <footer>
+      <img src="src/img/logo-light.png" />
+      <p>Designed for fashion lovers, by a fashion lover! - Cher</p>
+    </footer>
+  </body>
+</html>

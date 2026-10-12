@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://use.typekit.net/vgo0qsm.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/addClothing.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="src/js/main.js"></script>
+    <script type="module" src="src/js/addClothing.js"></script>
+
+    <title>Add Clothing Piece</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a class="logo" href="index.html"
+          ><img src="src/img/digiloLogo.png"
+        /></a>
+      </div>
+      <div class="navbar-toggle">
+        <div class="bar"><img src="/hamMenu.svg" /></div>
+        <div class="bar"><img src="/close.svg" /></div>
+      </div>
+      <ul class="navbar-menu">
+        <li><a id="home" href="index.html">Home</a></li>
+        <li><a id="closet" href="myCloset.html">My Closet</a></li>
+        <li><a id="looks" href="myLooks.html">My Outfits</a></li>
+        <li><a class="primary-button login" href="login.html">Login</a></li>
+        <li><a class="primary-button" href="register.html">Register</a></li>
+      </ul>
+    </nav>
+    <button id="back-button">
+      <img src="/arrow_back.svg" alt="Back" />
+      <span>Back</span>
+    </button>
+    <main id="addClothing-container">
+      <div class="title">
+        <h1>Add Clothing Item</h1>
+        <p>
+          Upload your favorite clothing pieces and tag them so you can style
+          them beautifully later.
+        </p>
+      </div>
+      <div class="content-container">
+        <div class="upload-container">
+          <h4>Upload image</h4>
+          <p>
+            Click to upload a photo of your clothing piece. Tip: a white or
+            transparent background helps your piece stand out!
+          </p>
+          <div class="upload-zone">
+            <img class="image-icon" src="/add_photo.svg" id="displayPic" />
+            <input
+              type="file"
+              accept="image/jpeg, image/png, image/jpg"
+              id="inputFile"
+            />
+            <label class="primary-button" for="inputFile"
+              >Choose clothing piece</label
+            >
+          </div>
+        </div>
+        <form id="details-container">
+          <h4>Item Details</h4>
+          <div class="inputBox nameInput">
+            <label>Name Clothing Item</label>
+            <input
+              id="name-clothing"
+              type="text"
+              placeholder="E.g. Cute Zara Sweater"
+              required
+            />
+          </div>
+
+          <div class="details-wrapper">
+            <div class="inputBox">
+              <label for="filter-clothingType">Type</label>
+              <p>
+                “What kind of piece is this?”(e.g., top, bottom, dress,
+                outerwear, shoes, or accessories)
+              </p>
+              <select id="filter-clothingType" class="select-box" required>
+                <option value="tops">Top</option>
+                <option value="bottoms">Bottom</option>
+                <option value="dresses">Dress</option>
+                <option value="shoes">Shoes</option>
+                <option value="outwear">Outwear</option>
+                <option value="accesories">Accesories</option>
+              </select>
+            </div>
+
+            <div class="inputBox">
+              <label for="filter-season">Season</label>
+              <p>
+                “When do you usually wear this?”(We’ll use it to suggest clothes
+                that match the weather!)
+              </p>
+              <select id="filter-season" class="select-box" required>
+                <option value="spring">Spring</option>
+                <option value="summer">Summer</option>
+                <option value="autumn">Autumn</option>
+                <option value="winter">Winter</option>
+              </select>
+            </div>
+
+            <div class="inputBox">
+              <label for="filter-occasion">Occasion</label>
+              <p>
+                “Where would you wear this piece?” (Casual day out? Party night?
+                Work chic?)
+              </p>
+              <select id="filter-occasion" class="select-box" required>
+                <option value="homy">Homy</option>
+                <option value="casual">Casual</option>
+                <option value="outdoors">Outdoors</option>
+                <option value="night-out">Night Out</option>
+                <option value="vacation">Vacation</option>
+              </select>
+            </div>
+
+            <div class="inputBox">
+              <label for="filter-color">Colour</label>
+              <p>"Choose the main color that represents this piece best"</p>
+              <select id="filter-color" class="select-box" required>
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="brown">Brown</option>
+              </select>
+            </div>
+            <div class="inputBox">
+              <label>Description</label>
+              <textarea
+                id="description"
+                name="description"
+                placeholder="E.g. A cozy sweater to wear when it's cold :)"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <button id="submit" type="submit" class="primary-button">
+            Add to Closet
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <img src="src/img/logo-light.png" />
+      <p>Designed for fashion lovers, by a fashion lover! - Cher</p>
+    </footer>
+  </body>
+</html>

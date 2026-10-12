@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://use.typekit.net/vgo0qsm.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/login-register.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="src/js/main.js"></script>
+    <script type="module" src="src/js/login.js"></script>
+
+    <title>My Looks</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a class="logo" href="index.html"
+          ><img src="src/img/digiloLogo.png"
+        /></a>
+      </div>
+      <div class="navbar-toggle">
+        <div class="bar"><img src="/hamMenu.svg" /></div>
+        <div class="bar"><img src="/close.svg" /></div>
+      </div>
+      <ul class="navbar-menu">
+        <li><a id="home" href="index.html">Home</a></li>
+        <li><a id="closet" href="myCloset.html">My Closet</a></li>
+        <li><a id="looks" href="myLooks.html">My Outfits</a></li>
+        <li><a class="primary-button login" href="login.html">Login</a></li>
+        <li><a class="primary-button" href="register.html">Register</a></li>
+      </ul>
+    </nav>
+    <button id="back-button">
+      <img src="/arrow_back.svg" alt="Back" />
+      <span>Back</span>
+    </button>
+    <main id="login">
+      <h1>Login</h1>
+      <div class="wrapper">
+        <form class="login-container">
+          <img src="src/img/digiloLogo.png" />
+          <div class="input-box">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="john.doe@mail.com"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="password">Password</label>
+            <input id="password" type="password" required />
+          </div>
+
+          <button type="submit" class="primary-button">Sign in!</button>
+          <p>Don't have an account? <a href="register.html">Register</a></p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
