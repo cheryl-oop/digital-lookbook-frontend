@@ -1,20 +1,63 @@
 # Digital Lookbook - FRONTEND ✨
-Digital Lookbook is a website where the user can upload their clothes and outfits, displayed in fun way.
-This is the FrontEnd of the website 
-<img width="2559" height="1397" alt="Screenshot 2026-01-02 163756" src="https://github.com/user-attachments/assets/9ebede81-2e28-4cc7-af34-a801a04bf113" />
 
+Digital Lookbook is a website where users can upload their clothes and 
+outfits and display them in a fun, visual way. This repository contains 
+the **frontend** of the application.
 
-Live link: [https://ehb-mct.github.io/web2-course-project-front-end-CherylAitchedji/index.html](https://ehb-mct.github.io/web2-course-project-front-end-CherylAitchedji/index.html)
+🔗 **Live demo:** [Live website](https://cheryl-oop.github.io/digital-lookbook-frontend/)
 
+> ⚠️ **Note:** This is a project from my previous academic year. 
+> If I were to rebuild it today, I would approach several things 
+> differently — see [Reflections](#-reflections) below.
+
+---
 ## Up & running 🏃‍➡️
-Log in or else you won't be able to upload clothes and outfits!
+Log in to get started — **you won't be able to upload clothes or outfits without an account.**
+- **Backend:** [link to backend repo](https://github.com/cheryl-oop/digital-lookbook-backend.git)
 
-If you want to see an already populated account with clothes and outfits, use these credentials:
-Credentials:
-email: demo@mail.com
-password: simplepassword25
+### 🔑 Demo credentials
 
-For demonstration purposes, clothing and outfit images are served from the frontend as static assets. The backend stores image filenames only. This approach ensures a stable and fully populated UI during demos while avoiding persistence limitations of free hosting environments.
+Want to explore an already populated account? Use these:
+
+| Field | Value |
+|---|---|
+| Email | `demo@mail.com` |
+| Password | `simplepassword25` |
+
+---
+
+## 📸 Demo Note
+
+For demonstration purposes, clothing and outfit images are served from 
+the frontend as **static assets**. The backend stores **image filenames only**.
+
+This approach ensures a stable and fully populated UI during demos while 
+avoiding persistence limitations of free hosting environments.
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** JavaScript, HTML, CSS
+- **Build Tool:** Vite
+- **Deployment:** GitHub Pages
+
+---
+
+## 💭 Reflections
+
+This project was built during my previous academic year, and my approach 
+to frontend development has evolved since then. If I were to rebuild it 
+today, I would change the following:
+
+- **Component-based structure** — I would break the UI into reusable 
+  components instead of writing everything as monolithic pages.
+- **Animation libraries** — I would use a dedicated library (e.g. GSAP, 
+  Framer Motion) instead of hand-rolled animations.
+- **Graphic assets** — I would handle and optimize graphic images more 
+  efficiently (e.g. proper image formats, lazy loading, filters).
+
+---
 
 ## Sources 🗃️
 
