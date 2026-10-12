@@ -5,6 +5,10 @@ import {
   updateRatingOutfit,
 } from "./api.js";
 
+if (!localStorage.getItem("userId")) {
+  window.location.href = "login.html";
+}
+
 function getOutfitIdFromUrl() {
   const params = new URLSearchParams(window.location.search);
   return params.get("id");
@@ -19,8 +23,8 @@ function renderOutfit(outfit) {
     <div id="clothes-container"></div>
     <div class="fit-pic">
     <img  src="${import.meta.env.BASE_URL}/outfits/${outfit.image}" alt="${
-    outfit.name
-  }" 
+      outfit.name
+    }" 
     onerror="this.onerror=null; this.src='${
       import.meta.env.BASE_URL
     }/outfits/placeholder-outfits.png';"/>
@@ -59,8 +63,8 @@ function renderOutfit(outfit) {
       <img
         id="like-button"
         src="${import.meta.env.BASE_URL}/${
-    outfit.liked ? "liked.svg" : "not-liked.svg"
-  }"
+          outfit.liked ? "liked.svg" : "not-liked.svg"
+        }"
         class="like-button"
         data-liked="${outfit.liked}"
       />
@@ -125,7 +129,7 @@ function addDeleteListener() {
     e.preventDefault();
     try {
       const confirmed = window.confirm(
-        "Are you sure you want to delete this outfit?"
+        "Are you sure you want to delete this outfit?",
       );
       if (!confirmed) return;
 

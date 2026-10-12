@@ -1,5 +1,6 @@
 import { getClothes, createOutfit } from "./api";
 
+
 const selectedClothes = [];
 
 //Display image in upload-zone

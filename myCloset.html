@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="src/js/main.js"></script>
     <script type="module" src="src/js/myCloset.js"></script>
+    <script type="module" src="/src/js/auth.js"></script>
 
     <title>My Closets</title>
   </head>
@@ -25,10 +26,21 @@
       </div>
       <ul class="navbar-menu">
         <li><a id="home" href="index.html">Home</a></li>
-        <li><a id="closet" href="myCloset.html">My Closet</a></li>
-        <li><a id="looks" href="myLooks.html">My Outfits</a></li>
-        <li><a class="primary-button login" href="login.html">Login</a></li>
-        <li><a class="primary-button" href="register.html">Register</a></li>
+        <li data-auth="required">
+          <a id="closet" href="myCloset.html">My Closet</a>
+        </li>
+        <li data-auth="required">
+          <a id="looks" href="myLooks.html">My Outfits</a>
+        </li>
+        <li data-auth="guest">
+          <a class="primary-button login" href="login.html">Login</a>
+        </li>
+        <li data-auth="guest">
+          <a class="primary-button" href="register.html">Register</a>
+        </li>
+        <li data-auth="required">
+          <a class="primary-button" href="#" id="logout">Logout</a>
+        </li>
       </ul>
     </nav>
 

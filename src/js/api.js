@@ -1,5 +1,4 @@
 const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3000";
-console.log("API Base URL:", import.meta.env.VITE_API_BASE_URL);
 //All fetch functions
 // get all clothes
 export async function getClothes(filters = {}) {

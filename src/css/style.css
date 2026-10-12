@@ -156,76 +156,76 @@ nav ul li a:hover {
 }
 
 @media (max-width: 600px) {
- .navbar-menu {
-  display: none;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 0;
-  position: absolute;
-  width: 17em;
-  height: 100vh;
-  top: 0;
-  right: 0;
-  padding: 5rem 2rem;
-  background-color: #231f20;
-  color: #ff6198;
-  backdrop-filter: blur(7px);
-}
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    position: absolute;
+    width: 17em;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    padding: 5rem 2rem;
+    background-color: #231f20;
+    color: #ff6198;
+    backdrop-filter: blur(7px);
+  }
 
-nav ul li {
-  width: 100%;
-}
+  nav ul li {
+    width: 100%;
+  }
 
-nav ul li a {
-  display: block;
-  width: calc(100% - 1.5rem);
-  color: #ff6198;
-  text-align: left;
-  padding: 1em 1.5em;
-  transition: 0.2s ease;
-}
+  nav ul li a {
+    display: block;
+    width: calc(100% - 1.5rem);
+    color: #ff6198;
+    text-align: left;
+    padding: 1em 1.5em;
+    transition: 0.2s ease;
+  }
 
-nav ul li a:hover {
-  background-color: #ff6198;
-  color: #231f20;
-  padding: 1em 1.5em;
-}
+  nav ul li a:hover {
+    background-color: #ff6198;
+    color: #231f20;
+    padding: 1em 1.5em;
+  }
 
-nav ul li a.primary-button {
-  background-color: #ff6198;
-  color: #231f20;
-  text-align: center;
-  margin-top: 1em;
-}
+  nav ul li a.primary-button {
+    background-color: #ff6198;
+    color: #231f20;
+    text-align: center;
+    margin-top: 1em;
+  }
 
-nav ul li a.primary-button:hover {
-  background-color: #fbd3e1;
-  color: #ff6198;
-}
+  nav ul li a.primary-button:hover {
+    background-color: #fbd3e1;
+    color: #ff6198;
+  }
 
-.navbar-menu.active {
-  display: flex;
-}
+  .navbar-menu.active {
+    display: flex;
+  }
 
-.navbar-toggle {
-  display: block;
-  transform: scale(1.3);
-  padding: 1em;
-  z-index: 50;
-  cursor: pointer;
-}
+  .navbar-toggle {
+    display: block;
+    transform: scale(1.3);
+    padding: 1em;
+    z-index: 50;
+    cursor: pointer;
+  }
 
-.navbar-toggle .bar:nth-child(2) {
-  display: none;
-}
+  .navbar-toggle .bar:nth-child(2) {
+    display: none;
+  }
 
-.navbar-toggle.active .bar:nth-child(1) {
-  display: none;
-}
+  .navbar-toggle.active .bar:nth-child(1) {
+    display: none;
+  }
 
-.navbar-toggle.active .bar:nth-child(2) {
-  display: block;
-}
+  .navbar-toggle.active .bar:nth-child(2) {
+    display: block;
+  }
 }
 
 /********************* Footer ******************/
@@ -264,4 +264,8 @@ footer p {
 }
 #back-button:hover {
   transform: scale(1.1);
+}
+
+[hidden] {
+  display: none !important;
 }

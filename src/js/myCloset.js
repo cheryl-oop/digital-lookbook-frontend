@@ -1,4 +1,7 @@
 import { getClothes } from "./api.js";
+if (!localStorage.getItem("userId")) {
+  window.location.href = "login.html";
+}
 
 //Render clothing cards
 function renderClothes(clothes) {

@@ -1,4 +1,7 @@
 import { getOutfits } from "./api.js";
+if (!localStorage.getItem("userId")) {
+  window.location.href = "login.html";
+}
 
 //Render outfit cards
 function renderOutfits(outfits) {
