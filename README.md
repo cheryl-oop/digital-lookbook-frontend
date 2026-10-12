@@ -3,6 +3,8 @@
 Digital Lookbook is a website where users can upload their clothes and 
 outfits and display them in a fun, visual way. This repository contains 
 the **frontend** of the application.
+<img width="2559" height="1397" alt="Screenshot 2026-01-02 163756" src="https://github.com/user-attachments/assets/8b58d0df-40d6-45f3-9851-ef6785787955" />
+
 
 🔗 **Live demo:** [Live website](https://cheryl-oop.github.io/digital-lookbook-frontend/)
 
